@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web design</title>
+    <link rel="icon" href="../Netfliximages/netflix.png">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .top_bar{
+            background-color: black;
+            height: 50px;
+            width: 100%;
+
+    
+        }
+        #container{
+            width: 90%;
+            margin:0px  auto;
+        }
+        #header{
+            height: 90px;
+            width: 100%;
+            background-color: rgb(65, 64, 64);
+            
+           
+        }
+        #header ul{
+            margin: 30px;
+            float: right;
+            
+        
+        }
+        #header ul li{
+            display: inline;
+            margin-right: 15px;
+        
+        }
+        #header ul li a{
+            font-size: 20px;
+            padding: 20px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+            
+        }
+        #header ul li a:hover{
+            color: red;
+        }
+        #header img{
+            margin-left: 200px;
+            margin-top: 18px;
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+        }
+        #banner img{
+            width: 100%;
+        
+        }
+        #content1{
+            
+            border-radius: 5px;
+            box-shadow: 4px 4px 8px wheat;
+            width: 32%;
+            background-color: rgb(59, 59, 59);
+            color: white;
+            float: left;
+            height: 500px;
+            margin-right:1%;
+            
+            
+        }
+        .head1{
+            margin: 30px;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .para1{
+            margin: 20px;
+            font-weight: 200;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: justify;
+            
+        }
+        .btn{
+            margin: 20px;
+            background-color: rgb(17, 16, 16);
+            border: none;
+            border-radius: 4px;
+            height: 40px;
+            width:100px;
+            cursor: pointer;
+            box-shadow: 5px 5px 10px white;
+            color: rgb(255, 252, 252);
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            
+        }
+        #content2{
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            box-shadow: 4px 4px 8px wheat;
+            width: 32%;
+            background-color: rgb(73, 72, 72);
+            color: white;
+            float: left;
+            height: 500px;
+            margin-right:20px;
+        }
+        .head2{
+            margin: 30px;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .para2{
+            margin: 20px;
+            font-weight: 200;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: justify;
+        }
+        .btn2{
+            margin: 20px;
+            background-color: rgb(17, 16, 16);
+            border: none;
+            border-radius: 4px;
+            height: 40px;
+            width:100px;
+            cursor: pointer;
+            box-shadow: 5px 5px 10px white;
+            color: rgb(255, 252, 252);
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            
+        }
+        #content3{
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            box-shadow: 4px 4px 8px wheat;
+            width: 32%;
+            background-color: rgb(104, 103, 103);
+            color: white;
+            float: right;
+            height: 500px;
+            margin-right:10px ;
+            
+            
+        }
+        .head3{
+            margin: 30px;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .para3{
+            margin: 20px;
+            font-weight: 200;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: justify;
+        }
+        .btn3{
+            margin: 20px;
+             background-color: rgb(17, 16, 16);
+            border: none;
+            border-radius: 4px;
+            height: 40px;
+            width:100px;
+            cursor: pointer;
+            box-shadow: 5px 5px 10px white;
+            color: rgb(255, 252, 252);
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            
+        }
+        #bottom1{
+            width: 60%;
+            float: left;
+            margin-top: 10px;
+            background: linear-gradient(rgb(116, 115, 115),rgb(175, 171, 171));
+            box-shadow: 2px 2px 5px rgb(58, 56, 56);
+            padding: 10px;
+            background-color: rgb(75, 69, 69);
+            color: rgb(255, 250, 250);
+            border-radius: 5px;
+        }
+        #bottom1 h2{
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            color: black;
+    
+
+        }
+        #bottom1 p{
+            text-align: justify;
+            font-size: 15px;
+            font-weight: 200;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        #bottom2 {
+            float: right;
+            margin-right: 19px;
+            
+            background: linear-gradient(rgb(116, 115, 115),rgb(175, 171, 171));
+            box-shadow: 2px 2px 5px rgb(58, 56, 56);
+            color: white;
+            margin-top: 20px;
+            width: 35%;
+            height: 240px;
+            margin-left: 5px;
+            border-radius: 10px;
+
+
+            
+
+        }
+        .tech{
+            
+            border-radius: 40%;
+            margin: 10px;
+            height: 160px;
+            width: 150px;
+            padding-left:20px;
+        }
+        #bottom2 h1{
+            margin-left: 15px;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            color: black;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 100%;
+            clear: both;
+        
+            
+        }
+        footer p{
+            text-align: center;
+            padding-top: 15px;
+            
+        }
+       
+
+       
+    </style>
+</head>
+<body>
+    <div class="top_bar">
+
+    </div>
+    <div id="container">
+       <div id="header">
+        <img src="../images/technology.jpeg">
+           <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Company</a></li>
+           </ul>
+       </div>
+       <div id="banner">
+            <img src="../images/college1.jpeg">
+       </div> 
+       <div id="content1">
+          <h2 class="head1">Welcome</h2>
+          <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, iusto. Mollitia aperiam debitis rem numquam, dolore blanditiis quis sunt fugit vitae maxime id atque error eos vel porro nulla omnis illo maiores provident tempora! Quis voluptatibus eligendi possimus veritatis, molestias, dicta distinctio assumenda sequi iste voluptatem exercitationem itaque nam aliquam?</p>
+          <button class="btn">Read More</button>
+       </div>
+       <div id="content2">
+          <h2 class="head2">Welcome</h2>
+          <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, iusto. Mollitia aperiam debitis rem numquam, dolore blanditiis quis sunt fugit vitae maxime id atque error eos vel porro nulla omnis illo maiores provident tempora! Quis voluptatibus eligendi possimus veritatis, molestias, dicta distinctio assumenda sequi iste voluptatem exercitationem itaque nam aliquam?</p>
+          <button class="btn2">Read More</button>
+       </div>
+       <div id="content3">
+          <h2 class="head3">Welcome</h2>
+          <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, iusto. Mollitia aperiam debitis rem numquam, dolore blanditiis quis sunt fugit vitae maxime id atque error eos vel porro nulla omnis illo maiores provident tempora! Quis voluptatibus eligendi possimus veritatis, molestias, dicta distinctio assumenda sequi iste voluptatem exercitationem itaque nam aliquam?</p>
+          <button class="btn3">Read More</button>
+       </div>
+       <div id="bottom1">
+            <h2>My Simple Web Design</h2>
+            <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b> Optio nobis aperiam, at possimus dolorem ducimus ullam temporibus dolore eveniet, vel illo nesciunt ipsam beatae neque, quibusdam nulla dicta. Minima, autem!</p>
+            <h2>My Simple Project:</h2>
+            <p><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</b> Doloremque unde corporis quae at veniam eos vero rem nobis illum, numquam, vel modi ipsa architecto. Esse provident illum cumque nesciunt maxime?</p>
+       </div>
+       <div id="bottom2">
+        <h1>My Simple Web Design</h1>
+        <img src="../images/technology.jpeg" class="tech">
+       </div>
+    </div>
+<footer>
+    <p>@'Design By J.B.SabariNathan'</p>
+</footer>       
+    
+</body>
+</html>
